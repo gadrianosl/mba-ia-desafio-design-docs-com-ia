@@ -10,7 +10,7 @@
 - [x] 8. Conferir rastreabilidade, timestamps, links e caminhos reais.
 - [x] 9. Registrar prompts, iterações e navegação no README.
 - [x] 10. Revisar checklist do enunciado e garantir que código e transcrição não mudaram.
-- [ ] 11. Publicar a documentação no fork público (etapa de entrega no GitHub).
+- [x] 11. Publicar a documentação no fork público (etapa de entrega no GitHub).
 
 ## Método
 
@@ -31,4 +31,4 @@ A implementação da feature não faz parte desta entrega.
 Sete ADRs e todos os documentos concluídos. Tracker: 124 IDs substantivos, 131 linhas,
 81,7% com fonte TRANSCRICAO e 24 fontes CODIGO. Links, exemplos JSON, falantes/timestamps
 e caminhos foram conferidos. Ver [REVISAO](REVISAO.md) para os limites e pendências técnicas.
-Publicação no GitHub permanece como etapa posterior à revisão local.
+Documentação publicada no fork público em 2026-10-17, após revisão do aluno.

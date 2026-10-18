@@ -126,5 +126,6 @@ existência das fontes de código, correspondência de timestamps/falantes e cob
 IDs. O diff confirmou preservação da transcrição e dos arquivos da aplicação. Não foi
 necessário executar a aplicação nem os seus testes: a feature não foi implementada.
 
-A publicação destas alterações no fork público é a etapa de entrega posterior à revisão
-local. Este README não afirma que houve push ou aprovação dos participantes da reunião.
+A documentação foi publicada no [fork público](https://github.com/gadrianosl/mba-ia-desafio-design-docs-com-ia)
+em 2026-10-17, após leitura dos arquivos pelo aluno. Isso não representa aprovação
+técnica pelos participantes da reunião. O link do repositório pode ser usado na entrega do MBA.

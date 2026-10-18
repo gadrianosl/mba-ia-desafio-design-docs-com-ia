@@ -37,4 +37,4 @@ adicionais são propostas derivadas para revisão, não requisitos aprovados sem
 A contagem por IDs apoia a revisão de cobertura, mas não é prova matemática de que
 cada frase tem fonte. Foi feita revisão semântica das unidades, com fontes agrupadas
 para subitens e marcação de propostas. Não houve teste de comportamento de webhooks,
-pois esta entrega não implementa a feature. Publicação no GitHub ainda não foi realizada.
+pois esta entrega não implementa a feature. A revisão local inicial antecedeu a publicação. Após leitura pelo aluno, a documentação foi publicada no fork público em 2026-10-17.
