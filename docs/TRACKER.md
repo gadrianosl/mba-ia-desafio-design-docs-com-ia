@@ -24,17 +24,17 @@ prometidas de lançamento. Metadados autor/data e relato do processo não são d
 | PRD-USER-01 | docs/PRD.md | Contexto / escopo | Integração B2B, filtros, operadores e ADMIN | TRANSCRICAO | [09:00] Marcos; [09:32] Larissa; [09:33] Marcos; [09:36] Sofia |
 | PRD-MET-01 | docs/PRD.md | Contexto / escopo | Expectativa abaixo de 10s; medição proposta, sem SLA definido | TRANSCRICAO | [09:02] Marcos |
 | PRD-SCOPE-01 | docs/PRD.md | Contexto / escopo | API de configuração, filtros, entregas e recuperação | TRANSCRICAO | [09:31] Marcos; [09:34] Marcos; [09:35] Diego |
-| PRD-OUT-01 | docs/PRD.md | Contexto / escopo | Email adiado | TRANSCRICAO | [09:37] Larissa |
+| PRD-OUT-01 | docs/PRD.md | Contexto / escopo | Email explicitamente adiado; esclarecimento após revisão do aluno, sem justificativa técnica definida na fala | TRANSCRICAO | [09:37] Marcos; [09:37] Larissa |
 | PRD-OUT-02 | docs/PRD.md | Contexto / escopo | Dashboard fora da fase | TRANSCRICAO | [09:40] Larissa |
 | PRD-OUT-03 | docs/PRD.md | Contexto / escopo | Rate limiting para observar e decidir | TRANSCRICAO | [09:39] Larissa |
 | PRD-OUT-04 | docs/PRD.md | Contexto / escopo | Escala multi-worker futura | TRANSCRICAO | [09:13] Diego |
 | PRD-OUT-05 | docs/PRD.md | Contexto / escopo | Arquivamento futuro; 30 dias não fechado | TRANSCRICAO | [09:08] Diego |
 | PRD-OUT-06 | docs/PRD.md | Contexto / escopo | Somente outbound | TRANSCRICAO | [09:02] Marcos |
 | PRD-FR-01 | docs/PRD.md | Requisito Funcional | Cadastrar URL/status e gerar secret | TRANSCRICAO | [09:31] Marcos; [09:32] Larissa |
-| PRD-FR-02 | docs/PRD.md | Requisito Funcional | Editar configuração | TRANSCRICAO | [09:33] Bruno |
-| PRD-FR-03 | docs/PRD.md | Requisito Funcional | Remover configuração | TRANSCRICAO | [09:33] Bruno |
+| PRD-FR-02 | docs/PRD.md | Requisito Funcional | Editar configuração; efeitos sobre pendentes não definidos na reunião | TRANSCRICAO | [09:33] Bruno |
+| PRD-FR-03 | docs/PRD.md | Requisito Funcional | Remover cadastro da seleção de novos eventos; destino dos pendentes em aberto | TRANSCRICAO | [09:33] Bruno; [09:34] Bruno |
 | PRD-FR-04 | docs/PRD.md | Requisito Funcional | Listar por customer | TRANSCRICAO | [09:33] Bruno |
-| PRD-FR-05 | docs/PRD.md | Requisito Funcional | Filtrar na inserção, sem linha se não há interessado | TRANSCRICAO | [09:33] Marcos; [09:34] Bruno |
+| PRD-FR-05 | docs/PRD.md | Requisito Funcional | Filtrar na inserção; sem interessados não há evento, inclusive após remoção de todos os cadastros | TRANSCRICAO | [09:33] Marcos; [09:34] Bruno |
 | PRD-FR-06 | docs/PRD.md | Requisito Funcional | Outbox no mesmo commit, rollback se falhar | TRANSCRICAO | [09:40] Bruno; [09:41] Diego |
 | PRD-FR-07 | docs/PRD.md | Requisito Funcional | Worker separado, polling 2s | TRANSCRICAO | [09:09] Diego; [09:11] Diego |
 | PRD-FR-08 | docs/PRD.md | Requisito Funcional | Retry/backoff/DLQ com ambiguidade explícita | TRANSCRICAO | [09:17] Larissa; [09:18] Diego |

@@ -32,3 +32,10 @@ Sete ADRs e todos os documentos concluídos. Tracker: 124 IDs substantivos, 131 
 81,7% com fonte TRANSCRICAO e 24 fontes CODIGO. Links, exemplos JSON, falantes/timestamps
 e caminhos foram conferidos. Ver [REVISAO](REVISAO.md) para os limites e pendências técnicas.
 Documentação publicada no fork público em 2026-10-17, após revisão do aluno.
+
+## Ajustes após a leitura do aluno
+
+- [x] Esclarecer no PRD o adiamento do email e as consequências da remoção de webhooks.
+- [x] Esclarecer no RFC o risco de perder a Atlas como cliente.
+- [x] Reorganizar o README com pedidos reais e três revisões do aluno.
+- [x] Atualizar rastreabilidade e conferir os documentos revisados.

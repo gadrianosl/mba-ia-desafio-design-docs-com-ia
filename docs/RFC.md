@@ -20,7 +20,10 @@ O FDD concentra os contratos; este RFC solicita revisão das lacunas abaixo.
 ## Contexto e problema
 
 **RFC-CTX-01.** Atlas Comercial, MaxDistribuição e Nova Cargo consultam GET /orders
-periodicamente. Isso torna a integração lenta e cara; há risco de perda da Atlas.
+periodicamente. Isso torna a integração lenta e cara. Segundo Marcos ([09:00]),
+a Atlas Comercial sinalizou que poderia deixar de ser cliente da plataforma e migrar
+para um concorrente caso a funcionalidade não fosse entregue até o fim do trimestre.
+Trata-se, portanto, de um risco comercial de perda do cliente.
 A expectativa declarada é notificação em menos de 10s. Não é um SLA com percentil,
 carga ou disponibilidade definidos. A transcrição cita fim do trimestre e depois
 fim de novembro; Marcos deve confirmar a data comercial, sem inferir ano.

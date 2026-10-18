@@ -51,13 +51,23 @@ Detalhes dos contratos ficam no FDD; justificativas arquiteturais ficam nos ADRs
 | PRD-OUT-05 | Arquivamento dos eventos entregues | Fora da feature; “30 dias ou assim” não é política fechada. |
 | PRD-OUT-06 | Webhooks inbound | Clientes recebem notificações; não enviam eventos para o OMS. |
 
+**Esclarecimento de PRD-OUT-01 após revisão do aluno.** O email de alerta foi
+explicitamente adiado por Larissa em [09:37], após Marcos solicitar um aviso quando
+houvesse falhas consecutivas. A exclusão reflete o escopo decidido na reunião;
+a transcrição não detalha uma justificativa técnica para o adiamento. Nesta fase,
+o histórico permite consultar resultados das entregas, e o desenho técnico descreve
+logs, métricas e DLQ para acompanhar e investigar falhas (ver [FDD](FDD.md),
+seções de observabilidade e retry/DLQ). Esses mecanismos não equivalem a um alerta
+proativo por email. A sugestão do aluno de antecipar esse alerta está registrada no
+[README](../README.md) como contribuição de revisão, sem alterar o escopo aprovado.
+
 ## Requisitos funcionais
 
 | ID | Requisito |
 |---|---|
 | PRD-FR-01 | Cadastrar endpoint por customer, com URL e lista de status; plataforma gera secret e devolve na criação. |
-| PRD-FR-02 | Editar configuração do webhook por PATCH. |
-| PRD-FR-03 | Remover configuração por DELETE. |
+| PRD-FR-02 | Editar configuração do webhook por PATCH; campos editáveis e efeitos sobre entregas já pendentes são detalhados como proposta no FDD e exigem revisão. |
+| PRD-FR-03 | Remover configuração por DELETE, retirando esse cadastro da seleção para novos eventos; o tratamento das entregas já pendentes permanece em aberto (RFC-OPEN-08). |
 | PRD-FR-04 | Listar webhooks de um customer por GET. |
 | PRD-FR-05 | Filtrar endpoints interessados no novo status na inserção; sem interessados, não inserir evento. |
 | PRD-FR-06 | Registrar evento atomicamente com changeStatus, revertendo a transação se a inserção falhar. |
@@ -68,6 +78,17 @@ Detalhes dos contratos ficam no FDD; justificativas arquiteturais ficam nos ADRs
 | PRD-FR-11 | Rotacionar secret por endpoint, com validade paralela da antiga por 24h. |
 | PRD-FR-12 | Enviar identificação do evento para deduplicação pelo receptor, aceitando duplicatas. |
 | PRD-FR-13 | Autenticar gerenciamento por JWT, permitindo ADMIN e OPERATOR; informar customer na requisição, sem extraí-lo do JWT. |
+
+**Esclarecimento de PRD-FR-02/03/05 após revisão do aluno.** Se todos os webhooks
+de um customer forem removidos, nenhuma nova notificação será gerada para ele,
+pois o filtro na inserção só considera endpoints interessados ([09:33] Marcos;
+[09:34] Bruno). Isso não impede mudanças de status dos pedidos: sem interessados,
+a operação segue sem inserir evento de webhook. Um cadastro posterior não implica
+reenvio automático das mudanças ocorridas sem assinatura, porque esses eventos não
+foram registrados na outbox. A reunião não define o que fazer com entregas que já
+estavam pendentes quando o endpoint foi editado ou removido. Essa regra deve ser
+fechada antes da implementação; remoção lógica e preservação de histórico são
+propostas no [FDD](FDD.md), e não decisões confirmadas na reunião.
 
 ## Requisitos não funcionais
 
